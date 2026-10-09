@@ -2,7 +2,7 @@
 const {pages,libraries}=window.WIKI;
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const groups=['O projeto','Como foi feito','Bibliotecas','Guias'];
+const groups=['O vídeo','O projeto','Como foi feito','Bibliotecas','Guias'];
 $('navigation').innerHTML=groups.map(g=>`<section class="nav-group"><h2>${g}</h2>${pages.filter(p=>p.group===g).map(p=>`<a href="#${p.id}" data-page="${p.id}">${esc(p.title)}</a>`).join('')}</section>`).join('');
 function closeMenu(){document.body.classList.remove('menu-open');$('menu').setAttribute('aria-expanded','false')}
 function render(){const id=location.hash.slice(1)||'inicio';const p=pages.find(p=>p.id===id);if(!p){$('page-title').textContent='Página não encontrada';$('page-lead').textContent='Esse assunto não está na wiki.';$('article').innerHTML='<a href="#inicio">Voltar ao início</a>';$('toc').innerHTML='';return}document.title=p.title+' · CidadanIA Wiki';$('breadcrumb').textContent='Documentação / '+p.group;$('page-group').textContent=p.group;$('page-title').textContent=p.title;$('page-lead').textContent=p.lead;$('article').innerHTML=p.body;
