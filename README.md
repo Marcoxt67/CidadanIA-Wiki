@@ -1,6 +1,6 @@
-# CidadanIA Wiki
+# CidadanIA — Guia completo do vídeo
 
-Site de documentação em português sobre o CidadanIA Digital. Inclui apresentação do jogo, arquitetura, fluxo de análise, regras de pontuação, API, instalação e uma página para cada dependência direta do aplicativo.
+Site explicativo em português sobre o vídeo do CidadanIA Digital. Inclui 60 capítulos, divididos entre apresentação do projeto e explicação do código, e 26 páginas de leitura e referência. Inclui apresentação do jogo, arquitetura, fluxo de análise, regras de pontuação, API, instalação e uma página para cada dependência direta do aplicativo.
 
 ## Abrir
 
@@ -19,6 +19,10 @@ O conteúdo técnico foi conferido no repositório Marcoxt67/CidadanIA, revisão
 Em Settings → Pages, selecione **GitHub Actions** como origem. O workflow publica somente `index.html` e `assets/`. Execute a ação “Publicar wiki” ou envie alterações para main.
 
 Endereço esperado após publicação: https://marcoxt67.github.io/CidadanIA-Wiki/ (a existência deste endereço depende da conclusão do deployment).
+
+## Diferenças entre vídeo e código
+
+Os capítulos sinalizam divergências do código consultado: critérios do README, interface e prompt; validação compacta que exige três intervenções; ausência de detalhamento individual na resposta compacta; e conferência do cadastro que depende do formato de resposta. O aplicativo não foi alterado.
 
 ## Limites
 
